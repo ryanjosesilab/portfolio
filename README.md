@@ -23,14 +23,14 @@ Open [http://localhost:3000](http://localhost:3000).
 
 Edit **`src/data/site.ts`** to set:
 
-- Name, location, tagline
-- Email, Calendly, blog, social links
-- Hero badges
-- About copy
-- Experience timeline
-- Tech stack (frontend / backend / devops)
-- Projects, certifications, recommendations
-- Memberships and footer
+- Name, location, tagline x
+- Email, Calendly, blog, social links x
+- Hero badges x
+- About copy x
+- Experience timeline x
+- Tech stack (frontend / backend / devops) x
+- Projects, certifications, recommendations x
+- Memberships and footer x
 
 Sections are built from this data, so you can keep the layout and only change content.
 

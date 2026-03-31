@@ -1,43 +1,33 @@
 export const site = {
-  name: "Kier Patrick Empang",
-  location: "Butuan City, Philippines",
-  tagline: "Software Engineer | Web Developer | UX/UI Designer",
+  name: "Ryan Jose Silab",
+  location: "Butuan City, Agusan Del Norte, Philippines",
+  tagline: "Video Editor | Web Developer | Photo Editor | Freelancer",
   /** Optional: URL to profile image (e.g. /avatar.jpg). Leave empty for initials placeholder. */
-  avatarUrl: "" as string | undefined,
+  avatarUrl: "/ryanjosepicpic.jpg" as string | undefined,
   /** Show verified checkmark next to name */
   verified: true,
   /** Optional: Facebook profile URL – verified badge links here when set */
-  facebookUrl: "" as string | undefined,
-  email: "your@email.com",
+  facebookUrl: "https://www.facebook.com/ryan.jose.silab.2024/" as string | undefined,
+  email: "rjsilab@gmail.com",
   calendlyUrl: "https://calendly.com/your-link",
-  blogUrl: "https://blog.yoursite.com",
-  linkedin: "https://linkedin.com/in/yourprofile",
-  github: "https://github.com/yourprofile",
-  instagram: "https://instagram.com/yourprofile",
+  blogUrl: "https://ryanjosesilab.blogspot.com/",
+  linkedin: "https://www.linkedin.com/in/ryan-jose-silab-1116093bb/",
+  github: "https://github.com/ryanjosesilab",
+  instagram: "https://www.instagram.com/silabryanjose?igsh=MTAxbm1nZDh0bnZzbg%3D%3D",
 };
 
 export const heroBadges: { label: string; href: string; subtitle?: string }[] = [];
 
-export const about = `I am a full-stack software engineer with hands-on experience in end-to-end product development, from requirements gathering and system planning to implementation, optimization, and long-term maintenance. I am currently part of ISySS-CDM, a three-year project where I work as a senior programmer and take on key responsibilities in data gathering, software development, architecture design, and making sure the codebase remains efficient, scalable, and maintainable as the project grows.
+export const about = `With a background in Web development and immersive technologies, I bring a unique technical edge to my creative work. Today, I operate at the intersection of design and function serving as a Video Editor, Web Developer, and Photo Editor for brands that value high-end aesthetics and precision. From my early experience with DOST-funded simulations to modern freelance projects, I specialize in building digital environments that are as functional as they are visually compelling.
 
-Beyond full-stack engineering, I also have a strong interest in immersive technologies and have previously contributed to a DOST-funded initiative, MARVELTechnologies, which focused on building AR/VR solutions through mining simulation use cases. That experience expanded my perspective on simulation-driven learning and interactive environments, and it strengthened my ability to design solutions across both traditional and emerging platforms.
-
-I also work on mobile development using React Native and Flutter, and I continue to broaden my technical focus through DevOps automation, workflow improvement, and AI-powered solutions that help teams deliver faster, smarter, and with greater consistency.`; 
+My process is rooted in the belief that great design should feel effortless. Whether I am architecting a seamless web interface, refining the rhythmic pacing of a cinematic edit, or manipulating light and color in post-production, my goal is to create a cohesive narrative. I leverage my experience in React and Flutter to build responsive platforms, while my eye for detail ensures every frame of video or still image resonates with intent. I am dedicated to helping teams and clients deliver faster, smarter, and with a level of consistency that defines modern digital excellence.`; 
 
 export const experience = [
-  { role: "Senior Programmer", company: "ISySS-CDM CSU", year: "2026" },
-  { role: "Systems Analyst", company: "DA-BAFE ABEMIS3.0", year: "2025" },
-  { role: "Part Time Faculty", company: "CCIS-CSU", year: "2024" },
-  { role: "Evaluator", company: "FaMRIA, DA BAFE", year: "2024" },
-  {
-    role: "Master of Science in Information Tech",
-    company: "Caraga State University",
-    year: "2024",
-  },
-  { role: "Junior Developer", company: "MARVELTechnologies", year: "2022" },
-  { role: "Admin Staff", company: "OWWA Caraga", year: "2019-2022" },
-  { role: "BS Information Technology", company: "Caraga State University", year: "2019" },
-  { role: "Hello World", company: "Started my coding journey", year: "2015" },
+  { role: "Photo Editing", company: "Assirac Frozen Goods", year: "2025" },
+  { role: "Data Entry Clerk", company: "Jonie's Lender", year: "2023" },
+  { role: "Photo Editing", company: "Rjones", year: "2023" },
+  { role: "Video Editing", company: "Raiz Gaming", year: "2022" },
+  
 ];
 
 export const techStack = {
@@ -48,23 +38,22 @@ export const techStack = {
     "Next.js",
     "Tailwind CSS",
   ],
-  backend: ["Node.js", "Python", "PostgreSQL", "MongoDB"],
-  devops: ["AWS", "Docker", "Kubernetes", "GitHub Actions"],
+  backend: ["Node.js", "PostgreSQL"],
+  devops: ["Docker", "GitHub Actions"],
   modeling: [
-    "3D Modeling",
-    "Blender",
-    "Animation",
+    "Photoshop",
+    "Danvinci Resolve",
+    "Adobe Premiere Pro",
     "Texture Editing",
-    "Unity Game Engine",
-    "C#",
+    "Adobe Illustrator",
   ],
 };
 
 export const projects = [
-  { name: "ISySS-CDM", description: "CSU & PNP collaborative system platform", url: "https://isyss-cdm.web.app/", domain: "isyss-cdm.web.app" },
-  { name: "ABEMIS 3.0", description: "Agricultural & Biosystems Engineering Management Information System", url: "https://abemis-front.vercel.app/", domain: "abemis-front.vercel.app" },
-  { name: "MARVEL Technologies", description: "AR/VR technology initiative and simulation platform", url: "https://chci.carsu.edu.ph/marvel-technologies/", domain: "chci.carsu.edu.ph" },
-  { name: "DYNAMIS Workout Tracker", description: "AI-powered workout tracker", url: "https://dynamis-app.online", domain: "dynamis-app.online" },
+  { name: "Assirac Fried Chicken Product", description: "Product Fried Chicken Photo Editing", url: "https://drive.google.com/file/d/1zhmOpJBWS2MQV7FlR7bcv7WtFczFbvls/view?usp=sharing"},
+  { name: "Jonie's Lender Data Clerk", description: "Data Entry Money Tracking and Collection ", url: "https://drive.google.com/file/d/1HRkWrn9CbbefkSVOJPm7tiE_w0tJWMMr/view?usp=sharing" },
+  { name: "RJONES Logo Creation", description: "Logo for Newly made Company", url: "https://drive.google.com/file/d/14E1JVappDwGQbVczHKLxdUpjbtuxVMDm/view?usp=sharing" },
+  { name: "Video Editing", description: "Video editing using Adobe Premiere Pro", url: "https://drive.google.com/file/d/1KsKOh-ytT_n_KRS-WrLOxYZ6V1oH7HSz/view?usp=sharing" },
 ];
 
 export const certifications: {
@@ -74,36 +63,30 @@ export const certifications: {
   year?: string;
 }[] = [
   {
-    name: "SPARK Technical Training for Blockchain Cryptocurrency Specialist Certification",
-    issuer: "Department of Information and Communications Technology",
-    href: "#",
+    name: "Course Completion HTML Certification",
+    issuer: "SoloLearn",
+    href: "https://drive.google.com/file/d/167jpEEEJeP1I8P9dOlk7pjl5m0bWaPXE/view?usp=sharing",
   },
   {
-    name: "Coursera UX/UI Certification",
-    issuer: "Google",
-    href: "#",
+    name: "Course Completion CSS Certification",
+    issuer: "SoloLearn",
+    href: "https://drive.google.com/file/d/1GCS6b2qh0W7u_RowAQA_D9QxuAm8Qdv9/view?usp=sharing",
   },
   {
-    name: "Project Management",
-    issuer: "University of the Philippines",
-    href: "#",
+    name: "Alternative Learning System (ALS) Certificate of Completion",
+    issuer: "Arvin B. Pascual",
+    href: "https://drive.google.com/file/d/1SXyUpl5REaMoeoeSg0vmDVI3ZrAbiY8h/view?usp=sharing",
   },
 ];
 
 export const recommendations = [
-  { quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.", author: "Cris Lawrence Adrian Militante", title: "ICT Director at GCM" },
-  { quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.", author: "Ken Gorro", title: "Senior Developer at Fullscale" },
-  { quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.", author: "Patrick Vince Velasco", title: "Software Engineer, YNS" },
-  { quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.", author: "John Edmerson Pizarra", title: "Jr. Full-stack Developer, PocketDevs" },
-  { quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.", author: "Glenn Pepito", title: "Professor at University of San Carlos" },
-  { quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.", author: "Van Honoridez", title: "Application Development Analyst at Accenture" },
-  { quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.", author: "Zinia Ma. Consuelo R. Trinidad", title: "Web Developer, Quickway Holdings Inc." },
-  { quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.", author: "Jomar Neri", title: "Full-stack Developer, Freelance" },
+  { quote: "I greatly admire exemplary work ethic. Approaches every task with unwavering dedication, consistency, and a proactive attitude that sets a high standard for the entire team. Consistently goes above and beyond, demonstrating a remarkable commitment to quality and excellence in every project. Strong sense of responsibility and relentless pursuit of success.", author: "Raymond Jones C. Silab", title: "CEO & Founder" },
+  { quote: "Outstanding communication skills and consistently conveys ideas clearly and effectively, fostering an environment of collaboration and mutual understanding. Ability to articulate complex concepts with ease and engage in constructive dialogue has greatly enhanced our team's efficiency and cohesion.", author: "Jonelyn Rose C. Silab", title: "Entrepreneur" },
 ];
 
 export const memberships = [
   {
-    name: "Philippine Society of IT Educators – Caraga Chapter",
-    href: "https://psite.org/",
+    name: "Caraga State University - Main Campus",
+    href: "https://www.facebook.com/csumain.usg",
   },
 ];
