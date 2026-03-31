@@ -33,9 +33,7 @@ export function Projects() {
                     <p className="mt-0.5 line-clamp-1 text-xs text-muted-foreground">
                       {project.description}
                     </p>
-                    <p className="mt-0.5 text-[10px] text-muted-foreground">
-                      {project.domain}
-                    </p>
+                   
                   </div>
                   <ExternalLink className="h-3.5 w-3.5 shrink-0 text-muted-foreground" />
                 </Link>
