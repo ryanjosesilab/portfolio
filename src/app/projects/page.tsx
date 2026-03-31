@@ -29,9 +29,7 @@ export default function ProjectsPage() {
                   <p className="mt-1 text-sm text-muted-foreground">
                     {project.description}
                   </p>
-                  <p className="mt-1 text-xs text-muted-foreground">
-                    {project.domain}
-                  </p>
+                 
                 </div>
                 <ExternalLink className="h-4 w-4 shrink-0 text-muted-foreground" />
               </a>
