@@ -5,12 +5,25 @@ import { Card } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
-const PLACEHOLDER_COUNT = 15;
+// 1. Cleaned up paths (Make sure these files are in your 'public' folder!)
+const galleryImages = [
+  { id: 1, src: "/pic2.jpg", alt: "Photo Editing Work" },
+  { id: 2, src: "/pic3.jpg", alt: "Video Thumbnail" },
+  { id: 3, src: "/pic4.jpg", alt: "Graphic Design" },
+  { id: 4, src: "/pic5.jpg", alt: "Web Development" },
+  { id: 5, src: "/pic6.jpg", alt: "UI/UX Design" },
+  { id: 6, src: "/pic7.jpg", alt: "Brand Identity" },
+  { id: 7, src: "/pic8.jpg", alt: "Illustration" },
+  { id: 8, src: "/pic9.jpg", alt: "Photography" },
+];
 
 export function Gallery() {
   const [startIndex, setStartIndex] = useState(0);
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const visibleCount = 5;
+  
+  // 2. Updated to use the actual length of your image list
+  const PLACEHOLDER_COUNT = galleryImages.length;
   const maxStart = Math.max(0, PLACEHOLDER_COUNT - visibleCount);
 
   function prev() {
@@ -36,25 +49,32 @@ export function Gallery() {
           >
             <ChevronLeft className="h-4 w-4" />
           </button>
+
+          {/* 3. This is the single, clean Grid Div */}
           <div className="grid flex-1 grid-cols-5 gap-2">
-            {Array.from({ length: visibleCount }, (_, offset) => {
+            {galleryImages.slice(startIndex, startIndex + visibleCount).map((image, offset) => {
               const i = startIndex + offset;
               return (
                 <Card
-                  key={i}
+                  key={image.id}
                   className={cn(
                     "aspect-square cursor-pointer overflow-hidden transition hover:ring-2 hover:ring-primary",
                     activeIndex === i && "ring-2 ring-primary"
                   )}
                   onClick={() => setActiveIndex(activeIndex === i ? null : i)}
                 >
-                  <div className="flex h-full w-full items-center justify-center bg-muted text-muted-foreground">
-                    <span className="text-xs font-medium">{i + 1}</span>
+                  <div className="relative h-full w-full">
+                    <img 
+                      src={image.src} 
+                      alt={image.alt} 
+                      className="h-full w-full object-cover" 
+                    />
                   </div>
                 </Card>
               );
             })}
           </div>
+
           <button
             type="button"
             onClick={next}
