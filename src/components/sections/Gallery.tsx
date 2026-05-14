@@ -12,7 +12,6 @@ const galleryImages = [
   { id: 3, src: "/pic4.jpg", alt: "Graphic Design" },
   { id: 4, src: "/pic5.jpg", alt: "Web Development" },
   { id: 5, src: "/pic6.jpg", alt: "UI/UX Design" },
-  { id: 6, src: "/pic7.jpg", alt: "Brand Identity" },
   { id: 7, src: "/pic8.jpg", alt: "Illustration" },
   { id: 8, src: "/pic9.jpg", alt: "Photography" },
 ];
